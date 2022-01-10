@@ -9,6 +9,12 @@ View location of global config file:
 git config --list
 ```
 
+### Delete Local, Merged Branches 
+
+```
+git branch --merged | egrep -v "(master|dev)" | xargs git branch -D
+```
+
 ### Remove a File from Git History
 
 Say the file is in the third last commit you did. You need to interactively rebase the last 3 commits then via the following command.
