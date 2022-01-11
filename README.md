@@ -15,6 +15,13 @@ git config --list
 git branch --merged | egrep -v "(master|dev)" | xargs git branch -D
 ```
 
+### Pulling a Not-Checked-Out Branch
+If you're in one branch, say `master`, but you want to pull and update another branch, say `dev` without checking `dev` out.
+
+```
+git pull origin dev:dev
+```
+
 ### Remove a File from Git History
 
 Say the file is in the third last commit you did. You need to interactively rebase the last 3 commits then via the following command.
