@@ -62,3 +62,8 @@ Checkout tag:
 ```
 git checkout v1.4
 ```
+
+Push tags:
+```
+git push --tags
+```
