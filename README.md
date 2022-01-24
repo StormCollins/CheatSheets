@@ -40,3 +40,25 @@ git commit --amend
 git rebase --continue
 git push -f
 ```
+
+### Tags
+Create a tag:
+
+```
+git tag -a v1.4 -m "Version 1.4"
+```
+
+List all tags:
+```
+git tag
+```
+
+Show details for specified tag:
+```
+git show v1.3
+```
+
+Checkout tag:
+```
+git checkout v1.4
+```
