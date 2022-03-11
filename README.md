@@ -41,6 +41,13 @@ git rebase --continue
 git push -f
 ```
 
+### Reset to Remote
+
+```
+git fetch origin
+git reset --hard origin/master
+```
+
 ### Tags
 Create a tag:
 
@@ -67,3 +74,5 @@ Push tags:
 ```
 git push --tags
 ```
+
+
